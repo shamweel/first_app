@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env ruby
 begin
   spring_bin_path = File.expand_path('../spring', __FILE__)
@@ -5,6 +6,9 @@ begin
 rescue LoadError => e
   raise unless e.message.end_with? spring_bin_path, 'spring/binstub'
 end
+=======
+#!/usr/bin/env ruby.exe
+>>>>>>> 4b54a222e7747c4e01453c13d78483ef64bf58f3
 APP_PATH = File.expand_path('../../config/application', __FILE__)
 require_relative '../config/boot'
 require 'rails/commands'
